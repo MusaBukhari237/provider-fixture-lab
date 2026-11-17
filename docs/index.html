@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Inspect AI API response fixtures | Provider Fixture Lab</title>
+  <meta name="description" content="Read pasted HTTP status, headers, and JSON from common AI providers and check the response shape.">
+  <link rel="canonical" href="https://musabukhari237.github.io/provider-fixture-lab/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Inspect AI API response fixtures | Provider Fixture Lab">
+  <meta property="og:description" content="Read pasted HTTP status, headers, and JSON from common AI providers and check the response shape.">
+  <meta property="og:url" content="https://musabukhari237.github.io/provider-fixture-lab/">
+  <meta property="og:image" content="https://musabukhari237.github.io/provider-fixture-lab/preview.png">
+  <meta property="og:image:alt" content="Provider Fixture Lab displaying a synthetic example result">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="app.css">
+  <script type="module" src="app.mjs"></script>
+</head>
+<body>
+<header><a href="./" class="brand"><img src="logo.svg" alt="">Provider Fixture Lab</a><a href="https://github.com/MusaBukhari237/provider-fixture-lab" class="small-link">GitHub repository</a></header>
+<main>
+<section class="lead"><h1>Inspect AI API response fixtures</h1><p>Read pasted HTTP status, headers, and JSON from common AI providers and check the response shape.</p></section>
+<div class="workspace">
+  <section class="panel" aria-labelledby="settings"><h2 id="settings">Response fixture</h2>
+    <div class="inputs"><label>Response format<select id="provider"><option value="chat">Chat Completions</option><option value="messages">Anthropic Messages</option><option value="gemini">Gemini GenerateContent</option></select></label><label>HTTP status<input id="status" type="number" value="200"></label><label class="wide">Response headers<textarea id="headers" rows="3" maxlength="50000" spellcheck="false"></textarea></label><label class="wide">JSON response body<textarea id="source" rows="9" maxlength="500000" spellcheck="false"></textarea></label></div>
+    <div class="actions"><button type="button" id="run">Inspect fixture</button><button type="button" id="sample" class="quiet">Load success example</button></div>
+    <small>Paste an HTTP response and choose its format. Sample data uses an invented request and response.</small>
+  </section>
+  <section class="panel" aria-labelledby="result-title"><h2 id="result-title">Diagnostic results</h2>
+    <div class="result" id="result"><p class="result-summary" aria-live="polite">Load an example or paste your own input.</p></div>
+  </section>
+</div>
+</main>
+<footer><a class="small-link" href="https://github.com/MusaBukhari237/provider-fixture-lab/blob/main/LICENSE">MIT license</a></footer>
+</body>
+</html>
