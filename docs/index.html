@@ -12,14 +12,23 @@
       name="description"
       content="Read pasted HTTP status, headers, and JSON from common AI providers and check the response shape."
     />
-    <link rel="canonical" href="https://musabukhari237.github.io/provider-fixture-lab/" />
+    <link
+      rel="canonical"
+      href="https://musabukhari237.github.io/provider-fixture-lab/"
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Inspect AI API response fixtures | Provider Fixture Lab" />
+    <meta
+      property="og:title"
+      content="Inspect AI API response fixtures | Provider Fixture Lab"
+    />
     <meta
       property="og:description"
       content="Read pasted HTTP status, headers, and JSON from common AI providers and check the response shape."
     />
-    <meta property="og:url" content="https://musabukhari237.github.io/provider-fixture-lab/" />
+    <meta
+      property="og:url"
+      content="https://musabukhari237.github.io/provider-fixture-lab/"
+    />
     <meta
       property="og:image"
       content="https://musabukhari237.github.io/provider-fixture-lab/preview.png"
@@ -38,10 +47,16 @@
   <body>
     <a class="skip" href="#workspace">Skip to workspace</a>
     <header>
-      <a class="brand" href="./"><img src="logo.svg" alt="" />Provider Fixture Lab</a>
+      <a class="brand" href="./"
+        ><img src="logo.svg" alt="" />Provider Fixture Lab</a
+      >
       <nav aria-label="Main">
         <a href="#guide">How to use</a
-        ><a class="repo" href="https://github.com/MusaBukhari237/provider-fixture-lab">GitHub ↗</a>
+        ><a
+          class="repo"
+          href="https://github.com/MusaBukhari237/provider-fixture-lab"
+          >GitHub ↗</a
+        >
       </nav>
     </header>
     <main>
@@ -50,7 +65,8 @@
           <p class="category">Response laboratory</p>
           <h1>Read the response.</h1>
           <p class="description">
-            Inspect AI response fixtures, usage counts, and retry hints without calling a provider.
+            Inspect AI response fixtures, usage counts, and retry hints without
+            calling a provider.
           </p>
         </div>
         <figure class="scene diagram">
@@ -72,7 +88,8 @@
                 <option value="messages">Anthropic Messages</option>
                 <option value="gemini">Gemini GenerateContent</option>
               </select></label
-            ><label>HTTP status<input id="status" type="number" value="200" /></label
+            ><label
+              >HTTP status<input id="status" type="number" value="200" /></label
             ><label class="wide"
               >Response headers<textarea
                 id="headers"
@@ -91,16 +108,20 @@
           </div>
           <div class="actions">
             <button type="button" id="run">Inspect fixture</button
-            ><button type="button" id="sample" class="quiet">Load success example</button>
+            ><button type="button" id="sample" class="quiet">
+              Load success example
+            </button>
           </div>
           <small
-            >Paste an HTTP response and choose its format. Sample data uses an invented request and
-            response.</small
+            >Paste an HTTP response and choose its format. Sample data uses an
+            invented request and response.</small
           >
         </section>
         <section class="panel" aria-labelledby="result-title" id="output-panel">
           <h2 id="result-title" tabindex="-1">Response diagnostics</h2>
-          <p class="result-status" id="result-status" aria-live="polite">Ready when you are</p>
+          <p class="result-status" id="result-status" aria-live="polite">
+            Ready when you are
+          </p>
           <div class="result" id="result">
             <p class="result-summary" aria-live="polite">
               Load an example or paste your own input.
@@ -120,7 +141,8 @@
     <footer>
       <span
         >Provider Fixture Lab ·
-        <a href="https://github.com/MusaBukhari237/provider-fixture-lab/blob/main/LICENSE"
+        <a
+          href="https://github.com/MusaBukhari237/provider-fixture-lab/blob/main/LICENSE"
           >MIT licensed</a
         ></span
       ><span class="credits"
